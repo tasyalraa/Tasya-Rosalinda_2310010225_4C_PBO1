@@ -1,6 +1,7 @@
 
 package manajemenolahraga;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 public class ManajerKegiatanOlahraga {
     private static ArrayList<Anggota> anggotaList = new ArrayList<>();
@@ -62,5 +63,33 @@ public class ManajerKegiatanOlahraga {
         System.out.println("Latihan berhasil dijadwalkan!");
     }
     
+    private static void lihatAnggota() {
+        System.out.println("Daftar Anggota:");
+        for (Anggota anggota : anggotaList) {
+            System.out.println(anggota);
+        }
+    }
     
+    private static void lihatJadwalLatihan() {
+        System.out.println("Jadwal Latihan:");
+        for (Latihan latihan : latihanList) {
+            System.out.println(latihan);
+        }
+    }
+    
+       // Metode untuk mendapatkan input integer yang valid
+    private static int getValidInteger(Scanner scanner) {
+        int input = -1;
+        while (true) {
+            try {
+                input = scanner.nextInt();
+                scanner.nextLine(); // membersihkan buffer
+                break; // keluar dari loop jika input valid
+            } catch (InputMismatchException e) {
+                System.out.println("Input tidak valid. Silakan masukkan angka.");
+                scanner.nextLine(); // membersihkan buffer
+            }
+        }
+        return input;
+    }
 }
