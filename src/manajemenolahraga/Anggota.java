@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package manajemenolahraga;
 
-/**
- *
- * @author tasya
- */
-public class Anggota {
-    
+
+public class Anggota extends KegiatanOlahraga {
+    private String nama;
+    private int usia;
+    private String olahraga;
 }
