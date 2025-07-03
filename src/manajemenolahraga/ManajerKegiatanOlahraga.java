@@ -42,4 +42,22 @@ public class ManajerKegiatanOlahraga {
         }
     }
        
+    private static void daftarAnggota(Scanner scanner) {
+        System.out.print("Masukkan Nama: ");
+        String nama = scanner.nextLine();
+        System.out.print("Masukkan Usia: ");
+        int usia = getValidInteger(scanner);
+        System.out.print("Masukkan Jenis Olahraga: ");
+        String olahraga = scanner.nextLine();
+        anggotaList.add(new Anggota(nama, usia, olahraga));
+        System.out.println("Anggota berhasil didaftarkan!");
+    }
+    
+    private static void jadwalkanLatihan(Scanner scanner) {
+        System.out.print("Masukkan Tanggal Latihan: ");
+        String tanggal = scanner.nextLine();
+        System.out.print("Masukkan Jenis Latihan: ");
+        String jenisLatihan = scanner.nextLine();
+        latihanList.add(new Latihan(tanggal, jenisLatihan));
+        System.out.println("Latihan berhasil dijadwalkan!");
 }
