@@ -11,4 +11,8 @@ public class Latihan extends KegiatanOlahraga {
         this.jenisLatihan = jenisLatihan;
     }
     
+    @Override
+    public String toString() {
+        return "Tanggal: " + tanggal + "\nJenis Latihan: " + jenisLatihan;
+    }
 }
