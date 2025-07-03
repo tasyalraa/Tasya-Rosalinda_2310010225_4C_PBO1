@@ -13,4 +13,15 @@ public class Anggota extends KegiatanOlahraga {
         this.usia = usia;
         this.olahraga = olahraga;
     }
+    
+    //accessor
+    public String getNama() {
+        return nama;
+    }
+    public int getUsia() {
+        return usia;
+    }
+    public String getOlahraga() {
+      return olahraga;
+    }
 }
