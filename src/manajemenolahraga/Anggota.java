@@ -17,6 +17,7 @@ public class Anggota extends KegiatanOlahraga {
     //accessor
     public String getNama() {
         return nama;
+        
     }
     public int getUsia() {
         return usia;
@@ -28,5 +29,10 @@ public class Anggota extends KegiatanOlahraga {
     // Mutator
     public void setOlahraga(String olahraga) {
         this.olahraga = olahraga;
+    }
+    
+    @Override
+    public String toString() {
+        return "Nama: " + nama + "\nUsia: " + usia + "\nOlahraga: " + olahraga;
     }
 }
