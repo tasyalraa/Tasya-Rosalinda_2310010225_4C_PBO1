@@ -24,4 +24,9 @@ public class Anggota extends KegiatanOlahraga {
     public String getOlahraga() {
       return olahraga;
     }
+    
+    // Mutator
+    public void setOlahraga(String olahraga) {
+        this.olahraga = olahraga;
+    }
 }
