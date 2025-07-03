@@ -60,4 +60,7 @@ public class ManajerKegiatanOlahraga {
         String jenisLatihan = scanner.nextLine();
         latihanList.add(new Latihan(tanggal, jenisLatihan));
         System.out.println("Latihan berhasil dijadwalkan!");
+    }
+    
+    
 }
